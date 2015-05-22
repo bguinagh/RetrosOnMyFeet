@@ -1,0 +1,41 @@
+﻿<h2>About us</h2>
+
+    <p>
+        The goal of this site is to provide a simple interface for viewing information about original and retro Air Jordans.
+    </p>
+    <h4>Disclaimer</h4>
+    <p>
+        RetrosOnMyFeet is not affiliated with Nike Inc.  All information should be considered the opinion of this site and does not reflect those of Nike Inc.
+    </p>
+<br />
+
+<p>
+    <h4>Provide Feedback</h4>
+    <div id="messages" class="alert alert-success" data-ng-show="messages" data-ng-bind="messages"></div>
+    <div data-ng-show="progress.active()" style="color: red; font-size: 50px;">Sending&hellip;</div>
+    <form name="helpForm" novalidate role="form">
+        <div class="form-group">
+            <label for="name">Your Name </label>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.name.$error.required">Required!</span>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.name.$error.maxlength">Too long!</span>
+            <input type="text" name="name" data-ng-model="name" class="form-control" required maxlength="50" />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your E-mail address</label>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.email.$error.required">Required!</span>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.$error.email">Invalid email!</span>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.email.$error.maxlength">Too long!</span>
+            <input type="email" name="email" data-ng-model="email" class="form-control" required  maxlength="50" />  
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Comment/Suggestion</label>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.comments.$error.required">Required!</span>
+            <span class="label label-danger" data-ng-show="submitted && helpForm.comments.$error.maxlength">Too long!</span>
+            <textarea name="comments" data-ng-model="comments" class="form-control" required maxlength="300"></textarea>
+        </div>
+
+        <button data-ng-disabled="progress.active()" data-ng-click="submit(helpForm)" class="btn btn-default">Submit</button>
+    </form>
+</p>

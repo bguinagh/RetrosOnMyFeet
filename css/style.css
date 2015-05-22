@@ -1,0 +1,19 @@
+
+h1, h2, h3, h4, h5, h6 {
+   /* font-family: 'Raleway', sans-serif;*/
+   font-family: 'Averia Sans Libre', cursive;
+}
+p, div {
+   /* font-family: 'Raleway', sans-serif;*/
+   font-family: 'Averia Sans Libre', cursive;
+}
+
+
+.jb-img-link, .nav, .pagination, .icon-next, .icon-prev, .panel-title a { cursor: pointer; }
+
+.carousel-caption { background-color:rgba(0, 0, 0, 0.5); left:30% !important; right:30% !important; padding-top:10px !important; padding-bottom:15px !important; bottom:7px !important;}
+
+.carousel-indicators
+{
+    bottom:1px !important; margin-bottom: 5px !important;
+}

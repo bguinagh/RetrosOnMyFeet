@@ -1,0 +1,9 @@
+﻿<h2>Retros</h2>
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" ng-repeat="sneaker in retros" > 
+	    <div>{{sneaker.OfficialName}}</div>
+        <img class="img-responsive img-rounded jb-img-link" ng-src="{{sneaker.Images[0].ImageUrl}}" alt="{{sneaker.OfficialName}}" title="{{sneaker.OfficialName}}" ng-click="getRetroModels(sneaker.Model)" />
+        <br />
+    </div>
+</div>
+<hr />

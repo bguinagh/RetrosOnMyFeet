@@ -1,0 +1,10 @@
+﻿<h2>OG's</h2>
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" ng-repeat="sneaker in sneakers | filter:filterOG.OG" > 
+	    <div>{{sneaker.OfficialName}}</div>
+        <div>"{{sneaker.StreetName}}"</div>
+        <img class="img-responsive img-rounded jb-img-link" ng-src="{{sneaker.Images[0].ImageUrl}}" alt="{{sneaker.OfficialName}}" title="{{sneaker.OfficialName}}" ng-click="getOGDetails(sneaker)" />
+        <br />
+    </div>
+</div>
+<hr />

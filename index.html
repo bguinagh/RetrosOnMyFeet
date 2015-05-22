@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="RetrosApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Retros On My Feet">
+    <meta name="description" content="Retros On My Feet is the best source for information on the history and release dates of Air Jordan sneakers.">
+    <meta name="keywords" content="Nike,Jordan,Air,Releases,Retros,Sneakers,Sneakerheads,Originals,OGs">
+    <!--link rel="shortcut icon" href="../../assets/ico/favicon.ico"-->
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="css/style.css" rel="stylesheet" />
+    <!--link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'-->
+    <link href='http://fonts.googleapis.com/css?family=Averia+Sans+Libre' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-51600148-1', 'retrosonmyfeet.com');
+	  ga('send', 'pageview');
+</script>
+    <title>Retros On My Feet</title>
+  </head>
+<body data-status ="{{ status }}">
+    <!-- NAVBAR -->
+    <div class="navbar-wrapper">
+        <div class="container">
+            <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#!/ogs">Retros On My Feet</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#!/ogs" class="button">OGs</a></li>
+                            <li><a href="#!/retros" class="button">Retros</a></li>
+                            <li><a href="#!/releases" class="button">Releases</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAVBAR -->
+
+    <div class="container" ng-view></div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p class="pull-right"><a back-to-top="">Back to top</a></p>
+            <p>&copy; 2015 MagicPineapple, Inc. &middot; <a href="#!/about">About</a></p>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
+    <script src="scripts/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-touch.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/promise-tracker.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

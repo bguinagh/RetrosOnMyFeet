@@ -1,0 +1,23 @@
+<h2>Retro Detail</h2>
+<div class="row">
+    <div class="col-md-6 show-grid">
+    <carousel interval="3000">              
+          <slide ng-repeat="slide in sneaker.Images" >          
+              <img class="img-rounded" ng-src="{{slide.ImageUrl}}" alt="{{sneaker.OfficialName}}" title="{{slide.ResourceName}}" style="margin:auto;">
+              <div class="carousel-caption">                  
+                  <div ng-show="slide.SourceUrl != ''">Source: <a href="{{slide.SourceUrl}}" target="_blank">{{slide.SourceName}}</a></div>                
+              </div> 
+          </slide>          
+      </carousel>
+        </div>
+    <h3 class="col-md-6 show-grid">
+        <h3>{{sneaker.OfficialName}} "{{sneaker.StreetName}}"</h3>
+        <div ng-show="sneaker.Colorway != ''">Colorway: {{sneaker.Colorway}}</div>
+        <div ng-show="sneaker.ProductCode != ''">ProductCode: {{sneaker.ProductCode}}</div>
+        <div ng-show="sneaker.ReleaseDate != ''">Release Date: {{sneaker.ReleaseDate | date : 'mediumDate'}}</div>
+        <div ng-show="sneaker.ReleaseType != ''">Release Type: {{sneaker.ReleaseType}}</div>
+        <div ng-show="sneaker.ReleasePrice != ''">Price: {{sneaker.ReleasePrice | currency}}</div>
+        <div ng-show="sneaker.Sizes != ''">Sizes: {{sneaker.Sizes}}</div>
+        <div ng-show="sneaker.Detail != ''">Detail: {{sneaker.Detail}}</div>
+    </div>
+</div>
